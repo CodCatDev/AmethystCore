@@ -157,7 +157,9 @@ asio::awaitable<void> statecoroutines::login(Transport transport, bool)
 
     std::println("Client {} is joining as {}", transport.remote_endpoint_copy,
         player_name);
-    asio::co_spawn(transport.socket.get_executor(),
+
+    auto io = transport.socket.get_executor();
+    asio::co_spawn(io,
         statecoroutines::configuration(std::move(transport),
             Player::SpawnInfo {
                 std::move(player_name), std::move(player_uuid), 2 }),

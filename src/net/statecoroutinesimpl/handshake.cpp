@@ -70,6 +70,6 @@ asio::awaitable<void> statecoroutines::handshake(Transport transport)
     if (it != end)
         co_return fail();
 
-    asio::co_spawn(transport.socket.get_executor(), std::move(next_coro),
-        detached_log_exceptions_token);
+    auto io = transport.socket.get_executor();
+    asio::co_spawn(io, std::move(next_coro), detached_log_exceptions_token);
 }
