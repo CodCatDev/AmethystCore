@@ -1,8 +1,0 @@
-BasedOnStyle: WebKit
-BreakBeforeBraces: Allman
-BreakBeforeInheritanceComma: true
-PointerAlignment: Right
-NamespaceIndentation: All
-ColumnLimit: 80
-ReflowComments: false
-BreakStringLiterals: false
