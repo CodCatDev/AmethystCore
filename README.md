@@ -1,8 +1,9 @@
-# AmethystCore
+<div align="center">
+    <h1>Amethyst</h1>
+    <p>v0.2-dev | build 3
+</div>
 
 Minecraft Java Edition server implementation in Nim.
-
-бля я завтра начну работу мне лень я спать
 
 ## Build & Run
 

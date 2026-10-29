@@ -1,0 +1,3 @@
+[submodule "libs/mcwire"]
+	path = libs/mcwire
+	url = https://github.com/CodCatDev/mcwire.git

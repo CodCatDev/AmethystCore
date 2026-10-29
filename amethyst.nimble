@@ -16,11 +16,12 @@ bin = @["amethyst"]
 backend = "c"
 
 requires "nim >= 2.2.10"
+requires "chronos >= 4.4.1"
 
 skipDirs = @["tests", "docs"]
 
 task release, "Build AmethystCore in release mode":
-    exec "nimble build -d:release -d:danger --opt:speed --mm:orc --passL:-s"
+    exec "nimble build -d:release -d:danger --opt:speed --mm:arc --passL:-s"
     exec "./build/amethyst.exe"
 
 task dev, "Build AmethystCore in dev (debug) mode":
