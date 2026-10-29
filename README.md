@@ -7,6 +7,11 @@ Minecraft Java Edition server implementation in Nim.
 
 ## Build & Run
 
+Requires:
+
+[Nim](https://nim-lang.org/) >= 2.2.10 \
+[MCWire](https://github.com/CodCatDev/McWire) >= 0.1.0
+
 Install
 ```
 git clone https://github.com/CodCatDev/AmethystCore.git
